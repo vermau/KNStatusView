@@ -37,6 +37,8 @@ public class KNModalStatusView: UIView {
         // :This means that the contentView is being added as a subview to the File's Owner
         addSubview(contentView)
         
+        // :Pass an empty array to .autoresizingMask
+        // :as no resizing of this control required 'cuz this control has a fixed size
         contentView.center = self.center
         contentView.autoresizingMask = []
         contentView.translatesAutoresizingMaskIntoConstraints = true
